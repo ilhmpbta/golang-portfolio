@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
 	"net/http"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
@@ -10,8 +10,8 @@ func main() {
 	r := gin.Default()
 
 	// Choose one of these:
-	r.GET("/", func(c *gin.Context) { 
-	    c.JSON(http.StatusOK, gin.H{"message": "Hello, Go!"}) 
+	r.GET("/", func(c *gin.Context) {
+		c.JSON(http.StatusOK, gin.H{"message": "Hello, Golang!"})
 	})
 	// r.GET("/", func(c *gin.Context) { c.String(http.StatusOK, "Server is running!") })
 
